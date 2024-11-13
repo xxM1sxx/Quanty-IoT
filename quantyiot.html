@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Animate Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="main-header position-fixed w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl py-0">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="../assets/images/sasscandy-logo.svg" alt=""></a>
+                </div>
+                <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="ti ti-menu-2 text-warning"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">Pricing </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">Elements </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">blog</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group  search">
+                                <button class="btn border-0 p-0" type="button" id="button-addon1"><i class="ti ti-search text-white"></i></button>
+                                <input type="text" class="form-control border-0 bg-transparent ps-2" placeholder="search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                            <a class="btn btn-warning btn-hover-secondery text-capitalize " href="#">register</a>
+                        </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="../assets/images/Creato-logo.svg" alt=""></a>
+                </div> 
+                <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+            </div>
+            <div class="offcanvas-body pt-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Pricing </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Elements </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">blog </a>
+                    </li>
+                    </ul>
+                    <div class="login d-block align-items-center mt-3">
+                        <a class="btn btn-warning text-capitalize w-100" href="#">contact us</a>
+                    </div>
+            </div>
+        </div>
+</header>
+
+<div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <div class="logo" style="display: block; z-index: 9999; position: relative;">
+            <a class="navbar-brand py-0 me-0"><img src="image/logo.jpg" alt="logo"></a>
+        </div> 
+        <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#">Pricing </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#">Elements </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-capitalize" href="#">blog </a>
+            </li>
+            </ul>
+            <div class="login d-block align-items-center mt-3">
+                <a class="btn btn-warning text-capitalize w-100" href="#">contact us</a>
+            </div>
+    </div>
+</div>
+</header>
+<!------------------------------>
+<!-- Header End  -->
+
+<!------------------------------>
+<!--- Hero Banner Start--------->
+<section class="hero-banner position-relative overflow-hidden">
+<div class="container h-100">
+<div class="row d-flex flex-wrap align-items-center h-100">
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+        <div class="position-relative left-hero-color">
+            <h1 class="mb-0 fw-bold">
+                QuantyIoT
+            </h1>
+            <p>SOlusi Otomatisasi Perhitungan Produksi.</p>
+            <a href="#" class="btn btn-warning btn-hover-secondery"><span class="d-inline-block me-2"><i class="ti ti-playstation-triangle"></i></span> Discover this Video</a>
+        </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+        <div class="position-relative right-hero-color">
+            <img src="image/industri.jpg" class="img-fluid"> 
+        </div>          
+    </div>
+</div>
+</div>
+</section>
+
+
+    <!------------------------------>
+    <!--- Service sectin Start------>
+    <!------------------------------>
+    <section class="section-featured-service">
+        <p>Working Process</p>
+        <h2>Our Featured Service that We Provide</h2>
+        <button class="btn-all-services">All Services</button>
+    
+        <div class="cards-container">
+            <div class="card-featured">
+                <div class="icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h4>Akses Real-Time</h4>
+                <p>Hasil penghitungan dapat diakses langsung melalui website dan aplikasi mobile</p>
+            </div>
+            <div class="card-featured">
+                <div class="icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h4>Digitalisasi Laporan</h4>
+                <p>Laporan harian, mingguan, bulanan, dan tahunan tersedia untuk diunduh dalam format PDF</p>
+            </div>
+            <div class="card-featured">
+                <div class="icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h4>Portable</h4>
+                <p>Mempermudah mobiltas dan memungkinkan penggunaan di berbagai lokasi </p>
+            </div>
+        </div>
+    </section>
+
+ <!-- tim -->
+    <section>
+  <div class="container-fluid pt-5 pb-5 bg-light" id="tim">
+    <div class="container text-center">
+      <h2 class="display-3" id="staff">TEAM</h2>
+      <p>Tim Start Up QuantyIoT</p>
+      <div class="tim-container">
+        <!-- Baris pertama (3 foto) -->
+        <div class="tim">
+          <img src="image/fatih-removebg-preview.png" class="mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" />
+          <h4>Fatih Nurrobi ALanshori</h4>
+          <p>CEO</p>
+          <p>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </p>
+        </div>
+        <div class="tim">
+          <img src="image/anda.png" class="mb-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500" />
+          <h4>Andakara Athaya</h4>
+          <p>CTO</p>
+          <p>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </p>
+        </div>
+        <div class="tim">
+          <img src="image/IMG_4237.png" class="mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" />
+          <h4>Muhammaf Bilal</h4>
+          <p>COO</p>
+          <p>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </p>
+        </div>
+        <!-- Baris kedua (2 foto) -->
+        <div class="tim">
+          <img src="image/foto1.png" class="mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" />
+          <h4>Hasna Putri</h4>
+          <p>CMO</p>
+          <p>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </p>
+        </div>
+        <div class="tim">
+          <img src="image/rara.png" class="mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
+          <h4>Raima Shaqina</h4>
+          <p>CFO</p>
+          <p>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <!------------------------------>
+    <!-----Contact section Start---->
+    <!------------------------------>
+    <section class="contact bg-primary position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div class="dots-shape-left position-absolute"><img src="../assets/images/icons/dot-shape.png"></div>
+            <div class="dots-shape-right position-absolute"><img src="../assets/images/icons/dot-shape.png"></div>
+            <div class="row">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <small class="fs-7 d-block text-warning">Join us Now</small>
+                    <h2 class="fs-3 text-white mb-0">Ready to try the product for free?</h2>
+                    <div class="owl-carousel owl-theme testimonial">
+                        <div class="item">
+                            <div class="details position-relative">
+                                <p class="fs-5 fw-light blue-light mb-4">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece”
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avtar-img rounded-circle overflow-hidden"><img src="../assets/images/contact/testimonial-image.png" class="img-fluid"></div>
+                                    <div class="name ps-3">
+                                        <h6 class="text-white">Merky Lester</h6>
+                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Managers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="details position-relative">
+                                <p class="fs-5 fw-light blue-light mb-4">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece”
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avtar-img rounded-circle overflow-hidden"><img src="../assets/images/contact/testimonial-image.png" class="img-fluid"></div>
+                                    <div class="name ps-3">
+                                        <h6 class="text-white">Merky Lester</h6>
+                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Managers</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <form class="position-relative">
+                        <div class="row ps-xxl-5 ps-xl-5 ps-lg-3 ps-md-0 ps-sm-0 ps-0">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Full Name</label>
+                                    <input type="text" class="form-control border-0" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">User Name</label>
+                                    <input type="text" class="form-control border-0" placeholder="Enter your username">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Email address</label>
+                                    <input type="email" class="form-control border-0" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Email Password</label>
+                                    <input type="text" class="form-control border-0" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            
+                            <div class="agree fs-7 fw-500">
+                                By clicking on the Sign Up button, you agree to Rakon.<br><a href="#" class="text-warning text-decoration-none">terms and conditions of use.</a>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-warning btn-hover-secondery text-capitalize mt-2 w-auto contact-btn">Try for Free</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="trusted-companies">
+                <div class="row justify-content-center">
+                    <div class="col-xx-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <h3 class="fs-7 mb-0 text-white text-center">Trusted by content creators across the world</h3>
+                        <ul class="d-flex flex-wrap align-items-center list-unstyled mb-0 pl-0 owl-carousel owl-theme trusted-logos">
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/google.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/microsoft.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/amazon.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/unique.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/google.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/microsoft.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/amazon.svg"></a></li>
+                            <li class="text-center item"><a href="#"><img src="../assets/images/contact/unique.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------>
+    <!-----Footer Start------------->
+    <!------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-logo-col">
+                        <a href="#"><img src="image/logocut.jpg"></a>
+                        <p class="blue-light mb-0 fs-7 fw-500">Rakon is a simple, elegant, and secure way to build your bitcoin and crypto portfolio.</p>
+                        <div class="callus text-white fw-500 fs-7">
+                            1989 Don Jackson Lane
+                            <div class="blue-light">Call us: <a href="#" class="text-warning fw-500 fs-7 text-decoration-none">808-956-9599</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                    <h5 class="text-white">Social</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                    <h5 class="text-white">Company</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#" >About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Legal & Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="subscribe">
+                        <h5 class="text-white">Subscribe</h5>
+                        <p class="blue-light fw-500">Subscribe to get the latest news form us
+                        </p>
+                        <div class="input-group">
+                            <input type="email" class="form-control br-15" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="button-addon2">
+                            <button class="btn btn-warning btn-hover-secondery ms-xxl-2 ms-xl-2 ls-lg-0 ms-md-0 ms-sm-0 ms-0"  type="button" id="button-addon2">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2024</span> - All Rights Reserved by <a class="blue-light text-decoration-none">adminmart.com</a> Dsitributed By <a  class="blue-light text-decoration-none">QuantyIoT</a></div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" 
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+
+</html>
